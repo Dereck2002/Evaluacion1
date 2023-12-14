@@ -49,7 +49,7 @@ class Clase_Productos
         try {
             $con = new Clase_Conectar_Base_Datos();
             $con = $con->ProcedimientoConectar();
-            $cadena = "UPDATE `Productos` SET `Nombre`='$Nombre', Precio=$Precio, ID_categoria=$ID_categoria,`Stock`='$Stock'  WHERE `ID_producto`='$ID_producto'";
+            $cadena = "UPDATE `productos` SET `Nombre`='$Nombre', `Precio`='$Precio', ID_categoria=$ID_categoria,`Stock`='$Stock'  WHERE `ID_producto`='$ID_producto'";
             $result = mysqli_query($con, $cadena);
             return "ok";
         } catch (Throwable $th) {
@@ -58,6 +58,7 @@ class Clase_Productos
             $con->close();
         }
     }
+
     public function eliminar($ID_producto)
     {
         try {
