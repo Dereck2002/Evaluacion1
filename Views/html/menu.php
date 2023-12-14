@@ -57,7 +57,7 @@
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
-                <span class="hide-menu">Productos</span>
+                <span class="hide-menu">Leccion</span>
               </a>
             </li>
             <li class="sidebar-item">
